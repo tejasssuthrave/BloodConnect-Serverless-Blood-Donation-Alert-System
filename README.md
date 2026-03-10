@@ -18,6 +18,9 @@ Flow:
 
 User → S3 Static Website → API Gateway → Lambda → DynamoDB → SNS → Email Alerts
 
+<img width="1536" height="1024" alt="ChatGPT Image Mar 10, 2026, 06_00_10 PM" src="https://github.com/user-attachments/assets/81858f30-370f-42a7-ad0b-1905ec67d1f7" />
+
+
 ---
 
 ## AWS Services Used
