@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Blood Request | BloodAlert</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <p>Registered Healthcare NGO Platform</p>
+      <p>24x7 Helpline: +91 1800-120-777</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">+</span>
+        <span>Blood Donation Alert System</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="register.html">Register as Donor</a></li>
+        <li><a class="active" href="request.html">Request Blood</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main emergency-bg">
+    <section class="container form-section fade-up">
+      <div class="form-header emergency-header">
+        <h1>Emergency Blood Request</h1>
+        <p>Hospitals can submit urgent blood requirements for immediate donor outreach coordination.</p>
+      </div>
+
+      <form id="requestForm" class="card form-card emergency-card" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="neededGroup">Blood Group Needed</label>
+            <select id="neededGroup" name="neededGroup" required>
+              <option value="">Select blood group</option>
+              <option>A+</option>
+              <option>A-</option>
+              <option>B+</option>
+              <option>B-</option>
+              <option>AB+</option>
+              <option>AB-</option>
+              <option>O+</option>
+              <option>O-</option>
+            </select>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="field">
+            <label for="hospitalName">Hospital Name</label>
+            <input id="hospitalName" name="hospitalName" type="text" placeholder="Enter hospital name" required>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="field field-span-2">
+            <label for="hospitalAddress">Hospital Address</label>
+            <input id="hospitalAddress" name="hospitalAddress" type="text" placeholder="Street, area, landmark" required>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="field">
+            <label for="hospitalCity">City</label>
+            <input id="hospitalCity" name="hospitalCity" type="text" placeholder="Enter city" required>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="field">
+            <label for="hospitalContact">Hospital Donor Cell Contact Number</label>
+            <input id="hospitalContact" name="hospitalContact" type="tel" placeholder="e.g., +91 98765 43210" required>
+            <small class="error-message"></small>
+          </div>
+        </div>
+
+        <button class="btn btn-danger" type="submit">Submit Emergency Request</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>About</h4>
+        <p>A healthcare platform helping hospitals connect with blood donors in emergency situations.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: support@blooddonationalert.org</p>
+        <p>Phone: +91 1800-120-777</p>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">i</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Twitter">x</a>
+        </div>
+        <p>&copy; 2026 Blood Donation Alert System. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

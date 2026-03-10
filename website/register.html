@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register as Donor | BloodAlert</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <p>Registered Healthcare NGO Platform</p>
+      <p>24x7 Helpline: +91 1800-120-777</p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">+</span>
+        <span>Blood Donation Alert System</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="register.html">Register as Donor</a></li>
+        <li><a href="request.html">Request Blood</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="container form-section fade-up">
+      <div class="form-header">
+        <h1>Donor Registration</h1>
+        <p>Join our donor network to help hospitals respond faster during emergencies.</p>
+      </div>
+
+      <form id="registerForm" class="card form-card" novalidate>
+        <div class="form-grid">
+          <div class="field">
+            <label for="fullName">Full Name</label>
+            <input id="fullName" name="fullName" type="text" placeholder="Enter full name" required>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="your@email.com" required>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="field">
+            <label for="mobile">Mobile Number(including country code)</label>
+            <input id="mobile" name="mobile" type="tel" placeholder="e.g., +91 98765 43210" required>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="field">
+            <label for="bloodGroup">Blood Group</label>
+            <select id="bloodGroup" name="bloodGroup" required>
+              <option value="">Select blood group</option>
+              <option>A+</option>
+              <option>A-</option>
+              <option>B+</option>
+              <option>B-</option>
+              <option>AB+</option>
+              <option>AB-</option>
+              <option>O+</option>
+              <option>O-</option>
+            </select>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="field field-span-2">
+            <label for="address">Full Address</label>
+            <input id="address" name="address" type="text" placeholder="Street, area, landmark" required>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="field">
+            <label for="city">City</label>
+            <input id="city" name="city" type="text" placeholder="Enter city" required>
+            <small class="error-message"></small>
+          </div>
+
+          <div class="field field-span-2">
+            <label for="healthIssues">Any Past Health Issues</label>
+            <textarea id="healthIssues" name="healthIssues" rows="4" placeholder="Optional details"></textarea>
+            <small class="error-message"></small>
+          </div>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Submit Registration</button>
+        <div class="subscription-note">
+          Note: After submitting the registration form, you will receive a subscription confirmation email. Please accept the subscription to receive emergency blood donation alerts.
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>About</h4>
+        <p>A healthcare platform helping hospitals connect with blood donors in emergency situations.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: support@blooddonationalert.org</p>
+        <p>Phone: +91 1800-120-777</p>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">i</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Twitter">x</a>
+        </div>
+        <p>&copy; 2026 Blood Donation Alert System. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

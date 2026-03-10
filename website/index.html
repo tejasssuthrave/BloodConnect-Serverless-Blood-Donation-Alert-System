@@ -1,1 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blood Donation Alert System</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <p>Registered Healthcare NGO Platform</p>
+      <p>24x7 Helpline: +91 1800-120-777</p>
+    </div>
+  </div>
 
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">+</span>
+        <span>Blood Donation Alert System</span>
+      </a>
+      <ul class="nav-links">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="register.html">Register as Donor</a></li>
+        <li><a href="request.html">Request Blood</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-bg-shape shape-1" aria-hidden="true"></div>
+      <div class="hero-bg-shape shape-2" aria-hidden="true"></div>
+      <div class="container hero-shell">
+        <div class="hero-content reveal is-visible">
+          <p class="tagline">Real-Time Emergency Network</p>
+          <h1>The donor response layer for modern emergency care</h1>
+          <p>
+            Blood Donation Alert System helps hospitals instantly reach verified nearby donors,
+            reduce critical delay, and coordinate transfusion support in minutes, not hours.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="register.html">Join as Donor</a>
+            <a class="btn btn-outline" href="request.html">Raise Emergency Request</a>
+          </div>
+          <div class="hero-metrics">
+            <article>
+              <h3>8 min</h3>
+              <p>Average first response</p>
+            </article>
+            <article>
+              <h3>220+</h3>
+              <p>Active hospital partners</p>
+            </article>
+            <article>
+              <h3>35+</h3>
+              <p>Cities on network</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal is-visible">
+          <article class="hero-dashboard glass-card">
+            <p class="mini-title">Emergency Operations Console</p>
+            <h3>Request #E-1042 is now being routed</h3>
+            <div class="dashboard-list">
+              <div class="queue-row">
+                <span>Blood group needed</span>
+                <strong>O-</strong>
+              </div>
+              <div class="queue-row">
+                <span>Assigned hospital</span>
+                <strong>Metro General</strong>
+              </div>
+              <div class="queue-row">
+                <span>Matched nearby donors</span>
+                <strong>18</strong>
+              </div>
+              <div class="queue-row">
+                <span>Notifications delivered</span>
+                <strong>86%</strong>
+              </div>
+            </div>
+            <div class="progress-wrap">
+              <div class="progress-fill"></div>
+            </div>
+            <p class="mini-note">Live status refresh: every 15 seconds</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container partner-strip reveal">
+      <p>Trusted by hospitals, donor communities, and volunteer responders</p>
+      <div class="partner-grid">
+        <span>CityCare Hospitals</span>
+        <span>PulseAid Foundation</span>
+        <span>MedLink Emergency</span>
+        <span>LifeDrop Network</span>
+      </div>
+    </section>
+
+    <section id="about" class="section section-soft">
+      <div class="container startup-intro">
+        <article class="intro-copy reveal">
+          <p class="eyebrow">Why teams choose this platform</p>
+          <h2>Designed like a startup product, built for real emergency workflows</h2>
+          <p>
+            We combine donor availability, location filtering, and alert orchestration into one
+            focused workflow so emergency teams can move from request to confirmed donor faster.
+          </p>
+        </article>
+        <div class="feature-stack">
+          <article class="card reveal">
+            <h3>Smart matching engine</h3>
+            <p>Matches by blood group, city, and emergency availability in one pass.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Priority escalation</h3>
+            <p>Critical requests are routed with urgency tiers to maximize response speed.</p>
+          </article>
+          <article class="card reveal">
+            <h3>Operational clarity</h3>
+            <p>Status cues for dispatch, donor confirmations, and pending follow-ups.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <div class="card-grid">
+          <article class="card reveal">
+            <div class="icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" class="icon" role="img">
+                <path d="M12 22c4.4-2.9 7-6 7-10a7 7 0 1 0-14 0c0 4 2.6 7.1 7 10z"></path>
+              </svg>
+            </div>
+            <h3>1. Donor Registers</h3>
+            <p>A donor joins the platform with blood group, city, and contact details.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" class="icon" role="img">
+                <path d="M3 10h18v9H3zM7 10V7a5 5 0 0 1 10 0v3"></path>
+              </svg>
+            </div>
+            <h3>2. Hospital Requests Blood</h3>
+            <p>Hospital staff submit an emergency requirement with blood group and location.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" class="icon" role="img">
+                <path d="M12 3v18M3 12h18"></path>
+              </svg>
+            </div>
+            <h3>3. Emergency Alerts Sent</h3>
+            <p>The system is designed to trigger alerts to nearby eligible donors in minutes.</p>
+          </article>
+          <article class="card reveal">
+            <div class="icon-wrap" aria-hidden="true">
+              <svg viewBox="0 0 24 24" class="icon" role="img">
+                <path d="M12 22c4-3 8-6 8-11a8 8 0 1 0-16 0c0 5 4 8 8 11zM9 12h6"></path>
+              </svg>
+            </div>
+            <h3>4. Donor Saves a Life</h3>
+            <p>Matched donors reach the hospital quickly to support urgent transfusion needs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="impact">
+      <div class="split-panel">
+        <div class="split-copy reveal">
+          <h2>Impact of Timely Blood Donation</h2>
+          <p>
+            Every minute matters during accidents, surgeries, and critical care. A connected
+            blood donor network can reduce treatment delays and improve survival outcomes.
+          </p>
+          <ul class="check-list">
+            <li>Faster donor discovery for emergency hospitals</li>
+            <li>Community participation with healthcare coordination</li>
+            <li>AWS serverless-ready architecture for scale</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="register.html">Become a Donor</a>
+            <a class="btn btn-outline" href="request.html">Submit a Request</a>
+          </div>
+        </div>
+        <div class="quote-card reveal">
+          <p>
+            "In emergency transfusion windows, this platform helps us identify nearby donor
+            options significantly faster than manual outreach."
+          </p>
+          <h4>Dr. Meera Kapoor</h4>
+          <span>Emergency Care Lead, Metro General Hospital</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container cta-band reveal">
+        <div>
+          <p class="eyebrow">Ready to contribute?</p>
+          <h2>Join the response network that helps hospitals act faster.</h2>
+          <p>
+            Register as a donor or raise an emergency request with verified details.
+          </p>
+        </div>
+        <div class="cta-actions">
+          <a class="btn btn-primary" href="register.html">Register Now</a>
+          <a class="btn btn-outline" href="request.html">Request Support</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <div>
+        <h4>About</h4>
+        <p>
+          Blood Donation Emergency Alert System is a healthcare initiative focused on faster donor
+          response during life-critical emergencies.
+        </p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>Email: support@blooddonationalert.org</p>
+        <p>Phone: +91 1800-120-777</p>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">i</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Twitter">x</a>
+        </div>
+        <p>&copy; 2026 Blood Donation Alert System. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
